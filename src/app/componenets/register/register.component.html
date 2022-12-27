@@ -1,0 +1,61 @@
+<form [formGroup]="registerForm" (ngSubmit) ="registersubmitted()" class ='border p-3 rounded-3'>
+    <div class = 'row g-0' >
+        <div class = 'col text-center p - 2 mb - 3 bg-light text-dark'>
+            <span class = 'fs-1'>
+                Customer Details
+            </span>
+        </div>
+    </div>
+    <div class="row g-2">
+        <div class="col">
+            <label for="FirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" formControlName = "firstname">
+        </div>
+        <div class="col">
+            <label for="LastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" formControlName = "lastname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <label for="dateofbirth" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id ="date of birth" max="{{maxDate}}" placeholder="dateofbirth" formControlName ="dateofbirth">
+            <br>
+        </div>
+    </div>
+    <div class="col">
+        <label for="addressline1" class="form-label">Address Line </label>
+        <input type="text" class="form-control" id="Address Line 1" formControlName = "addressline1">
+        
+    </div>
+    <div class="col">
+        <label for="addressline2 " class="form-label">Address Line 2</label>
+        <input type="text" class="form-control" id="address line 2" formControlName = "addressline2">
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" formControlName = "city">
+        </div>
+        <div class="col">
+            <label for="state" class="form-label">state</label>
+            <input type="text" class="form-control" id="state" formControlName = "state">
+        </div>
+        <div class ='col'>
+            <div class="form-outline">
+                <label class="form-label" for="zip">Zip Code</label>
+                <input type="text"  id="zip" class="form-control" maxlength="5" formControlName = "zip"/>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-3">
+        <button class="btn btn-outline-primary " type="back">Back</button>
+        <button class="btn btn-outline-primary "  type="submit">Submit</button>
+    </div>
+
+</form>
+
+
